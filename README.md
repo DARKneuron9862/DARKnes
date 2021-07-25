@@ -1,2 +1,2 @@
 # DARKnes Experimental v
-An emulator of NES 
+we are just starting
