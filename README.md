@@ -1,2 +1,4 @@
 # DARKnes Experimental
-An emulator of NES 
+NES emulator
+dsajdhkjadhkja
+adkhadhkjahnddasdsad
