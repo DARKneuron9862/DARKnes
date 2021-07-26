@@ -1,7 +1,9 @@
 /*
-@author: Anirban Chowdhury
-
-
+ *Memory header for "DARKnes" an NES emulator
+ *Author:Anirban Chowdhury
+ *Copyright (C),2021, Anirban Chowdhury 
+ *This file contains memory related macros,structures and 
+ *function prototypes.
 */
 #include<stdint.h>
 
@@ -16,3 +18,6 @@ typedef struct{
 }__memory;
 
 extern __memory memory;
+
+
+void test_memory();
