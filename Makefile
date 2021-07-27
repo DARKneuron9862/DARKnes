@@ -6,17 +6,18 @@
 
 ####################################
 
-#Add necessary aliases
+
 target=DARKnes
 main=src/main.c
 drivers=$(wildcard src/drivers/*.c)
 
+all default: $(target)
 
-all default $(target):$(main) 
-		gcc -o $(target) $(main) $(drivers) -I inc
+$(target):$(main) $(drivers)
+	gcc -o $@ $^ -I inc
 
 $(main): $(drivers)
-	gcc -c $(drivers) -I inc
+	gcc -c $^ -I inc
 
 clean:
 	rm -f *.o $(target)
