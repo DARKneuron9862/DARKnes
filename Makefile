@@ -1,11 +1,11 @@
 ####################################
 
 #Makefile
-#Author:Anirban Chowdhury
+#Authors: Anirban Chowdhury,
+#	  Sharad Saha
 #Copyright(c),2021,Anirban Chowdhury 
 
 ####################################
-
 
 target=DARKnes
 main=src/main.c
@@ -20,10 +20,8 @@ all default: $(target)
 $(target):$(objfiles) $(main)
 	gcc -o $@ $^ $(INC_FLAG) $(INCLUDE)
 
-
-$(objfiles): $(drivers)
-	gcc -c $^ $(INC_FLAG) $(INCLUDE)
-	mv *.o $(DRIVERS_DIR)
-
+%.o: %.c
+	gcc -c $^ $(INC_FLAG) $(INCLUDE) -o $@
+	
 clean:
 	rm -f $(objfiles) $(target)
