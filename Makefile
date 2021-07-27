@@ -6,11 +6,24 @@
 
 ####################################
 
-#Add necessary aliases
+
 target=DARKnes
 main=src/main.c
-all default $(target):$(main) #put rest of ingredients 1 line and at most 1 alias#no explicit filenames
-		#write the receipe 1 line
+DRIVERS_DIR=src/drivers
+INCLUDE=inc
+INC_FLAG=-I
+drivers=$(wildcard src/drivers/*.c)
+objfiles=$(drivers:.c=.o) 
+
+all default: $(target) 
+
+$(target):$(objfiles) $(main)
+	gcc -o $@ $^ $(INC_FLAG) $(INCLUDE)
+
+
+$(objfiles): $(drivers)
+	gcc -c $^ $(INC_FLAG) $(INCLUDE)
+	mv *.o $(DRIVERS_DIR)
+
 clean:
-	#write the receipe to clean the target and
-	#any other obj files created in build process
+	rm -f $(objfiles) $(target)
