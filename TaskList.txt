@@ -1,0 +1,21 @@
+List of tasks
+1.Create the build script:
+
+	Objective:Complete Makefile. 
+	
+	Testing:
+		DARKnes executable will be created and run this to get desired output.
+
+	Background: 
+		The include headers and source files are in different directory 
+		and headers,macros ,functions, structs should be accessible by any 
+		source file without including explicit paths to the source files
+		so "every path-conflict resolve should go through Makefile
+	
+	Constraints:
+		1. Do not touch anyfile other than Makefile.
+		2. Instructions are written in Makefile,observe them.
+		3. After writing the Makefile and successfull testing push the changes 
+		to forked-branch and create a pull-request.
+		4.Dont push anything to forked-branch after the pull-request until pull-request is closed or merged.
+		5.Max number of commits allowed:1  
