@@ -8,9 +8,9 @@
 
  
 #include <stdint.h>
-#include"memory.h"
-#define PPU_REG_SIZE 0x8U
 
+#define PPU_REG_SIZE 0x8U
+#define BIT(x)  x
 /*Memory-mapped  PPU registers*/
 #define PPUCTRL     0x2000
 #define PPUMASK     0x2001

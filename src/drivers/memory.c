@@ -6,7 +6,11 @@
 
 #include<stdio.h>
 #include"memory.h"
- void test_memory()
+#include"PPU.h"
+
+__memory memory;
+
+void test_memory()
  {
  	printf("greetings from memory\n");
 
