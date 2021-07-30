@@ -8,16 +8,16 @@
 #include<stdint.h>
 #define BIT(x)	x
 
-#define	CPU_ADDR_SPACE		   0xFFFF+0x1 
+#define	CPU_ADDR_SPACE		0xFFFF+0x1 
 
-#define INTR_SRAM_BASE 		   0x0000
-#define INTR_SRAM_RANGE 	   0x0800
+#define INTR_SRAM_BASE 		0x0000
+#define INTR_SRAM_RANGE 	0x0800
 
-#define INTR_SRAM_MIRROR_END   0x1FFF
-#define PPU_REG_BASE		   0x2000
-#define PPU_REG_END			   0x2007
-#define PPU_REG_MIRROR_END 	   0x3FFF	
-#define N_PPU_REG			   0x8
+#define INTR_SRAM_MIRROR_END   	0x1FFF
+#define PPU_REG_BASE		0x2000
+#define PPU_REG_END		0x2007
+#define PPU_REG_MIRROR_END 	0x3FFF	
+#define N_PPU_REG		0x8
 
 typedef struct{
 	uint8_t RAM[CPU_ADDR_SPACE];
