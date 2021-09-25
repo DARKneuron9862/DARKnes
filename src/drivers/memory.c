@@ -7,6 +7,7 @@
 #include<stdio.h>
 #include"memory.h"
 #include"PPU.h"
+#include <stdlib.h>
 
 __memory memory;
 
