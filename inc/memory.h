@@ -20,7 +20,7 @@
 
 typedef struct{
 	uint8_t RAM[CPU_ADDR_SPACE];
-	uint8_t *vram;
+	uint8_t vram[PPU_REG_MIRROR_END];
 	uint8_t *oam;
 	
 	uint16_t VRAM_address;
